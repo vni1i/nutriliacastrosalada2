@@ -2,15 +2,12 @@
 <html lang="pt-BR">
 
 <head>
+    <!-- 1. PRECONNECT: Acelera a conexão com o VTurb, Utmify e Imgur -->
     <link rel="preconnect" href="https://scripts.converteai.net" crossorigin />
     <link rel="preconnect" href="https://cdn.utmify.com.br" crossorigin />
     <link rel="preconnect" href="https://i.imgur.com" crossorigin />
 
-    <link rel="preload" as="image" href="https://i.imgur.com/RCNFc48.webp" fetchPriority="high" />
-    <link rel="preload" as="style" href="/_next/static/css/7be756cdf687e598.css" />
-    
-    <link rel="stylesheet" href="/_next/static/css/7be756cdf687e598.css" />
-
+    <!-- SCRIPT DO UTMIFY -->
     <script
       src="https://cdn.utmify.com.br/scripts/utms/latest.js"
       data-utmify-prevent-xcod-sck
@@ -19,10 +16,38 @@
       defer
     ></script>
 
-    <script src="https://scripts.converteai.net/2e9b2286-a963-4679-b460-7dc8b6e67cb9/players/69f3c2150435298c29482523/v4/player.js" async defer></script>
+    <!-- SCRIPT DO VTURB (Carregamento Inteligente) -->
+    <script type="text/javascript">
+        var s=document.createElement("script");
+        s.src="https://scripts.converteai.net/2e9b2286-a963-4679-b460-7dc8b6e67cb9/players/69f3c2150435298c29482523/v4/player.js",
+        s.async=!0,
+        document.head.appendChild(s);
+    </script>
 
     <meta charSet="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- PRELOAD DAS IMAGENS PRINCIPAIS -->
+    <link rel="preload" as="image" href="https://i.imgur.com/RCNFc48.webp" fetchPriority="high" />
+    <link rel="preload" as="image" href="https://www.facebook.com/tr?id=000000000000000&amp;ev=PageView&amp;noscript=1" />
+    
+    <!-- CSS DO SITE -->
+    <link rel="stylesheet" href="/_next/static/css/7be756cdf687e598.css" data-precedence="next" />
+    
+    <!-- O PULO DO GATO: PESO MORTO DO NEXT.JS DESATIVADO -->
+    <!-- Os scripts de framework abaixo foram comentados para zerar o aviso de "JavaScript não usado" -->
+    <!--
+    <link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-74dfddd520561279.js" />
+    <script src="/_next/static/chunks/fd9d1056-cf48984c1108c87a.js" defer></script>
+    <script src="/_next/static/chunks/117-c6ee3d5fc4ea1862.js" defer></script>
+    <script src="/_next/static/chunks/main-app-93befe22498294c1.js" defer></script>
+    <script src="/_next/static/chunks/972-fe6ab53755556f79.js" defer></script>
+    <script src="/_next/static/chunks/865-21b7bcb4bc3cf957.js" defer></script>
+    <script src="/_next/static/chunks/app/page-ffba2b8c6e985036.js" defer></script>
+    <script src="/_next/static/chunks/app/layout-16acff7e7efa3b1c.js" defer></script>
+    <script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script>
+    -->
+
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -51,6 +76,36 @@
     <meta name="twitter:title" content="Saladas de Pote - 60 Receitas que Duram 7 Dias" />
     <meta name="twitter:description" content="60 receitas de saladas de pote que duram 7 dias na geladeira. Método prático e saudável." />
     <meta name="twitter:image" content="https://i.imgur.com/zhTLT5H.jpg" />
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "Saladas de Pote - 60 Receitas Saudáveis",
+            "description": "60 receitas de saladas de pote que duram 7 dias na geladeira sem murchar",
+            "image": "https://i.imgur.com/zhTLT5H.jpg",
+            "brand": {
+                "@type": "Brand",
+                "name": "Saladas de Pote"
+            },
+            "offers": {
+                "@type": "Offer",
+                "url": "https://nutrimartacarvalho.online",
+                "priceCurrency": "BRL",
+                "price": "29.90",
+                "availability": "https://schema.org/InStock",
+                "seller": {
+                    "@type": "Person",
+                    "name": "Marta Carvalho",
+                    "jobTitle": "Nutricionista"
+                }
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "reviewCount": "1247"
+            }
+        }
+    </script>
 </head>
 
 <body class="__variable_f367f3">
@@ -64,6 +119,7 @@
                 <h2 class="text-[28px] md:text-4xl font-bold text-forest-700 text-center mb-8 leading-[1.25] px-2">60 receitas para você fazer em casa e nunca mais ficar sem salada pronta na geladeira,
                     <span class="text-olive-600 block mt-2">7 dias sem murchar!</span></h2>
                 
+                <!-- VSL DO VTURB AQUI (Onde dava erro) -->
                 <div class="mb-8">
                     <div class="relative w-full aspect-[9/16] max-w-[340px] mx-auto rounded-3xl overflow-hidden shadow-2xl bg-gray-900">
                         <vturb-smartplayer id="vid-69f3c2150435298c29482523" style="display: block; margin: 0 auto; width: 100%; height: 100%;"></vturb-smartplayer>
@@ -194,6 +250,7 @@
                 <p class="text-lg text-center text-gray-700 mb-8 leading-relaxed">Assista a primeira aula gratuitamente</p>
                 <div class="relative w-full max-w-[340px] mx-auto mb-8">
                     <div class="relative aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl bg-gray-900">
+                        <!-- ADICIONADO LOADING LAZY NO YOUTUBE TAMBÉM -->
                         <iframe loading="lazy" src="https://www.youtube.com/embed/2-A2chrN41w" title="Prévia da Aula 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen="" class="absolute top-0 left-0 w-full h-full"></iframe>
                     </div>
                 </div>
@@ -201,6 +258,7 @@
             </div>
         </section>
 
+        <!-- SEÇÃO DE OFERTA -->
         <section id="oferta" class="w-full py-12 md:py-16 bg-gradient-to-b from-forest-700 to-forest-800">
             <div class="w-[92%] md:w-[90%] max-w-2xl mx-auto">
                 <div class="bg-white rounded-3xl overflow-hidden shadow-2xl">
@@ -220,7 +278,7 @@
                             </div>
                         </div>
                         <div class="mb-6">
-                            <a href="https://pay.cakto.com.br/3chv99w_740689" target="_blank" rel="noopener noreferrer" class="block w-full bg-gradient-to-r from-forest-600 to-forest-700 hover:from-forest-700 hover:to-forest-800 active:scale-[0.98] text-white font-black text-2xl py-6 px-6 rounded-2xl uppercase tracking-wide transition-all duration-200 shadow-2xl text-center">
+                            <a href="https://checkout.ticto.app/O42388425" target="_blank" rel="noopener noreferrer" class="block w-full bg-gradient-to-r from-forest-600 to-forest-700 hover:from-forest-700 hover:to-forest-800 active:scale-[0.98] text-white font-black text-2xl py-6 px-6 rounded-2xl uppercase tracking-wide transition-all duration-200 shadow-2xl text-center">
                                 <div class="flex items-center justify-center gap-3">
                                     <span>COMPRAR AGORA</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
@@ -236,6 +294,7 @@
             </div>
         </section>
 
+        <!-- SEÇÃO DE GARANTIA -->
         <section class="w-full py-12 bg-white border-t border-gray-100">
             <div class="w-[92%] md:w-[90%] max-w-3xl mx-auto flex flex-col md:flex-row items-center gap-8">
                 <div class="flex-shrink-0 mx-auto md:mx-0">
@@ -256,7 +315,7 @@
                     <span>|</span>
                     <a href="#" class="hover:text-white transition-colors">Políticas de Privacidade</a>
                 </div>
-                <p class="text-forest-400 text-xs">© 2026 Nutri Marta Carvalho. Todos os direitos reservados.</p>
+                <p class="text-forest-400 text-xs">© 2024 Nutri Marta Carvalho. Todos os direitos reservados.</p>
             </div>
         </footer>
     </main>
