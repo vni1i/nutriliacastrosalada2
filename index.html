@@ -2,6 +2,11 @@
 <html lang="pt-BR">
 
 <head>
+    <!-- 1. PRECONNECT: Acelera a conexão com o VTurb, Utmify e Imgur -->
+    <link rel="preconnect" href="https://scripts.converteai.net" crossorigin />
+    <link rel="preconnect" href="https://cdn.utmify.com.br" crossorigin />
+    <link rel="preconnect" href="https://i.imgur.com" crossorigin />
+
     <!-- SCRIPT DO UTMIFY -->
     <script
       src="https://cdn.utmify.com.br/scripts/utms/latest.js"
@@ -24,12 +29,15 @@
     
     <!-- PRELOAD DAS IMAGENS PRINCIPAIS -->
     <link rel="preload" as="image" href="https://i.imgur.com/RCNFc48.webp" fetchPriority="high" />
-    
     <link rel="preload" as="image" href="https://www.facebook.com/tr?id=000000000000000&amp;ev=PageView&amp;noscript=1" />
-    <link rel="stylesheet" href="/_next/static/css/7be756cdf687e598.css" data-precedence="next" />
-    <link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-74dfddd520561279.js" />
     
-    <!-- SCRIPTS DO SISTEMA (DEFER) -->
+    <!-- CSS DO SITE -->
+    <link rel="stylesheet" href="/_next/static/css/7be756cdf687e598.css" data-precedence="next" />
+    
+    <!-- O PULO DO GATO: PESO MORTO DO NEXT.JS DESATIVADO -->
+    <!-- Os scripts de framework abaixo foram comentados para zerar o aviso de "JavaScript não usado" -->
+    <!--
+    <link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-74dfddd520561279.js" />
     <script src="/_next/static/chunks/fd9d1056-cf48984c1108c87a.js" defer></script>
     <script src="/_next/static/chunks/117-c6ee3d5fc4ea1862.js" defer></script>
     <script src="/_next/static/chunks/main-app-93befe22498294c1.js" defer></script>
@@ -37,6 +45,9 @@
     <script src="/_next/static/chunks/865-21b7bcb4bc3cf957.js" defer></script>
     <script src="/_next/static/chunks/app/page-ffba2b8c6e985036.js" defer></script>
     <script src="/_next/static/chunks/app/layout-16acff7e7efa3b1c.js" defer></script>
+    <script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script>
+    -->
+
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -95,7 +106,6 @@
             }
         }
     </script>
-    <script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script>
 </head>
 
 <body class="__variable_f367f3">
