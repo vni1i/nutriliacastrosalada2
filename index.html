@@ -2,25 +2,34 @@
 <html lang="pt-BR">
 
 <head>
+    <!-- SCRIPT DO UTMIFY -->
     <script
-  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-  data-utmify-prevent-xcod-sck
-  data-utmify-prevent-subids
-  async
-  defer
-></script>
+      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+      data-utmify-prevent-xcod-sck
+      data-utmify-prevent-subids
+      async
+      defer
+    ></script>
+
+    <!-- SCRIPT DO VTURB (Carregamento Inteligente) -->
+    <script type="text/javascript">
+        var s=document.createElement("script");
+        s.src="https://scripts.converteai.net/2e9b2286-a963-4679-b460-7dc8b6e67cb9/players/69f3c2150435298c29482523/v4/player.js",
+        s.async=!0,
+        document.head.appendChild(s);
+    </script>
+
     <meta charSet="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     
-    <!-- PRELOAD DAS IMAGENS PRINCIPAIS (Logo e Capa do Vídeo) PARA DERRUBAR O LCP -->
+    <!-- PRELOAD DAS IMAGENS PRINCIPAIS -->
     <link rel="preload" as="image" href="https://i.imgur.com/RCNFc48.webp" fetchPriority="high" />
-    <link rel="preload" as="image" href="https://i.imgur.com/wyl3Gxl.webp" fetchPriority="high" />
     
     <link rel="preload" as="image" href="https://www.facebook.com/tr?id=000000000000000&amp;ev=PageView&amp;noscript=1" />
     <link rel="stylesheet" href="/_next/static/css/7be756cdf687e598.css" data-precedence="next" />
     <link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-74dfddd520561279.js" />
     
-    <!-- TODOS OS SCRIPTS ALTERADOS PARA DEFER (Carregamento em 2º Plano) -->
+    <!-- SCRIPTS DO SISTEMA (DEFER) -->
     <script src="/_next/static/chunks/fd9d1056-cf48984c1108c87a.js" defer></script>
     <script src="/_next/static/chunks/117-c6ee3d5fc4ea1862.js" defer></script>
     <script src="/_next/static/chunks/main-app-93befe22498294c1.js" defer></script>
@@ -33,8 +42,7 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="theme-color" content="#2F5233" />
     <title>Saladas de Pote - 60 Receitas que Duram 7 Dias | Marta Carvalho</title>
-    <meta name="description" content="60 receitas de saladas de pote que duram 7 dias na geladeira sem murchar. Aprenda o método que já ajudou milhares de pessoas a economizar tempo, dinheiro e emagrecer com saúde. Acesso imediato por apenas R$ 29,90."
-    />
+    <meta name="description" content="60 receitas de saladas de pote que duram 7 dias na geladeira sem murchar. Aprenda o método que já ajudou milhares de pessoas a economizar tempo, dinheiro e emagrecer com saúde. Acesso imediato por apenas R$ 29,90." />
     <meta name="author" content="Marta Carvalho - Nutricionista" />
     <meta name="keywords" content="salada no pote, receitas saudáveis, meal prep, marmita fit, emagrecimento saudável, alimentação saudável, saladas que duram 7 dias" />
     <meta name="creator" content="Marta Carvalho" />
@@ -100,9 +108,14 @@
             <div class="w-[92%] md:w-[90%] max-w-xl mx-auto">
                 <h2 class="text-[28px] md:text-4xl font-bold text-forest-700 text-center mb-8 leading-[1.25] px-2">60 receitas para você fazer em casa e nunca mais ficar sem salada pronta na geladeira,
                     <span class="text-olive-600 block mt-2">7 dias sem murchar!</span></h2>
+                
+                <!-- VSL DO VTURB AQUI (Onde dava erro) -->
                 <div class="mb-8">
-                    <div class="relative w-full aspect-[9/16] max-w-[340px] mx-auto rounded-3xl overflow-hidden shadow-2xl bg-gray-900"><video class="w-full h-full object-cover" controls="" playsInline="" preload="metadata" poster="https://i.imgur.com/wyl3Gxl.webp"><source src="https://i.imgur.com/wyl3Gxl.mp4" type="video/mp4"/>Seu navegador não suporta a reprodução de vídeos.</video></div>
+                    <div class="relative w-full aspect-[9/16] max-w-[340px] mx-auto rounded-3xl overflow-hidden shadow-2xl bg-gray-900">
+                        <vturb-smartplayer id="vid-69f3c2150435298c29482523" style="display: block; margin: 0 auto; width: 100%; height: 100%;"></vturb-smartplayer>
+                    </div>
                 </div>
+
                 <div class="mb-8"><a href="#oferta" class="block w-full bg-forest-600 hover:bg-forest-700 active:bg-forest-800 text-white font-bold text-xl py-5 px-6 rounded-2xl uppercase tracking-wide transition-all duration-200 shadow-lg hover:shadow-xl active:scale-[0.98] text-center">Quero minhas receitas agora</a></div>
                 <div
                     class="grid grid-cols-3 gap-3 border-t border-gray-200 pt-6">
@@ -188,16 +201,6 @@
                             /></div>
                         <div class="p-5">
                             <h3 class="text-lg font-bold text-gray-900 mb-4 text-center leading-snug">Salada Refrescante + Molho Cítrico</h3>
-                            <div class="flex flex-col gap-2">
-                                <div class="flex items-center justify-center gap-2 bg-green-50 px-4 py-3 rounded-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-4 h-4 text-forest-600 flex-shrink-0"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                                    <span
-                                        class="text-sm font-semibold text-gray-700">7 dias</span>
-                                </div>
-                                <div class="flex items-center justify-center gap-2 bg-orange-50 px-4 py-3 rounded-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flame w-4 h-4 text-orange-600 flex-shrink-0"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
-                                    <span
-                                        class="text-sm font-semibold text-gray-700">100 kcal</span>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div class="bg-white rounded-3xl overflow-hidden shadow-lg">
@@ -205,16 +208,6 @@
                             /></div>
                         <div class="p-5">
                             <h3 class="text-lg font-bold text-gray-900 mb-4 text-center leading-snug">Salada Toscana + Molho Siciliano</h3>
-                            <div class="flex flex-col gap-2">
-                                <div class="flex items-center justify-center gap-2 bg-green-50 px-4 py-3 rounded-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-4 h-4 text-forest-600 flex-shrink-0"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                                    <span
-                                        class="text-sm font-semibold text-gray-700">7 dias</span>
-                                </div>
-                                <div class="flex items-center justify-center gap-2 bg-orange-50 px-4 py-3 rounded-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flame w-4 h-4 text-orange-600 flex-shrink-0"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
-                                    <span
-                                        class="text-sm font-semibold text-gray-700">130 kcal</span>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div class="bg-white rounded-3xl overflow-hidden shadow-lg">
@@ -222,16 +215,6 @@
                             /></div>
                         <div class="p-5">
                             <h3 class="text-lg font-bold text-gray-900 mb-4 text-center leading-snug">Salada Caprese</h3>
-                            <div class="flex flex-col gap-2">
-                                <div class="flex items-center justify-center gap-2 bg-green-50 px-4 py-3 rounded-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-4 h-4 text-forest-600 flex-shrink-0"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                                    <span
-                                        class="text-sm font-semibold text-gray-700">7 dias</span>
-                                </div>
-                                <div class="flex items-center justify-center gap-2 bg-orange-50 px-4 py-3 rounded-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flame w-4 h-4 text-orange-600 flex-shrink-0"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
-                                    <span
-                                        class="text-sm font-semibold text-gray-700">120 kcal</span>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div class="bg-white rounded-3xl overflow-hidden shadow-lg">
@@ -239,67 +222,6 @@
                             /></div>
                         <div class="p-5">
                             <h3 class="text-lg font-bold text-gray-900 mb-4 text-center leading-snug">Salada Caesar + Molho Original</h3>
-                            <div class="flex flex-col gap-2">
-                                <div class="flex items-center justify-center gap-2 bg-green-50 px-4 py-3 rounded-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-4 h-4 text-forest-600 flex-shrink-0"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                                    <span
-                                        class="text-sm font-semibold text-gray-700">7 dias</span>
-                                </div>
-                                <div class="flex items-center justify-center gap-2 bg-orange-50 px-4 py-3 rounded-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flame w-4 h-4 text-orange-600 flex-shrink-0"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
-                                    <span
-                                        class="text-sm font-semibold text-gray-700">115 kcal</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded-3xl overflow-hidden shadow-lg">
-                        <div class="aspect-[4/5] relative"><img alt="Salada Big Mac + Molho Especial" loading="lazy" decoding="async" data-nimg="fill" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" src="https://i.imgur.com/Fdf4A0F.webp"
-                            /></div>
-                        <div class="p-5">
-                            <h3 class="text-lg font-bold text-gray-900 mb-4 text-center leading-snug">Salada Big Mac + Molho Especial</h3>
-                            <div class="flex flex-col gap-2">
-                                <div class="flex items-center justify-center gap-2 bg-green-50 px-4 py-3 rounded-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-4 h-4 text-forest-600 flex-shrink-0"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                                    <span
-                                        class="text-sm font-semibold text-gray-700">7 dias</span>
-                                </div>
-                                <div class="flex items-center justify-center gap-2 bg-orange-50 px-4 py-3 rounded-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flame w-4 h-4 text-orange-600 flex-shrink-0"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
-                                    <span
-                                        class="text-sm font-semibold text-gray-700">180 kcal</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded-3xl overflow-hidden shadow-lg">
-                        <div class="aspect-[4/5] relative"><img alt="Salada Mediterrânea + Molho Agridoce" loading="lazy" decoding="async" data-nimg="fill" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" src="https://i.imgur.com/wtNRqcP.webp"
-                            /></div>
-                        <div class="p-5">
-                            <h3 class="text-lg font-bold text-gray-900 mb-4 text-center leading-snug">Salada Mediterrânea + Molho Agridoce</h3>
-                            <div class="flex flex-col gap-2">
-                                <div class="flex items-center justify-center gap-2 bg-green-50 px-4 py-3 rounded-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-4 h-4 text-forest-600 flex-shrink-0"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                                    <span
-                                        class="text-sm font-semibold text-gray-700">7 dias</span>
-                                </div>
-                                <div class="flex items-center justify-center gap-2 bg-orange-50 px-4 py-3 rounded-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flame w-4 h-4 text-orange-600 flex-shrink-0"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
-                                    <span
-                                        class="text-sm font-semibold text-gray-700">120 kcal</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded-3xl overflow-hidden shadow-lg">
-                        <div class="aspect-[4/5] relative"><img alt="Salada Rústica + Mostarda e Mel" loading="lazy" decoding="async" data-nimg="fill" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" src="https://i.imgur.com/TvbnueJ.webp"
-                            /></div>
-                        <div class="p-5">
-                            <h3 class="text-lg font-bold text-gray-900 mb-4 text-center leading-snug">Salada Rústica + Mostarda e Mel</h3>
-                            <div class="flex flex-col gap-2">
-                                <div class="flex items-center justify-center gap-2 bg-green-50 px-4 py-3 rounded-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-4 h-4 text-forest-600 flex-shrink-0"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                                    <span
-                                        class="text-sm font-semibold text-gray-700">7 dias</span>
-                                </div>
-                                <div class="flex items-center justify-center gap-2 bg-orange-50 px-4 py-3 rounded-xl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flame w-4 h-4 text-orange-600 flex-shrink-0"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
-                                    <span
-                                        class="text-sm font-semibold text-gray-700">160 kcal</span>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -317,385 +239,32 @@
                 <h2 class="text-[28px] md:text-4xl font-bold text-forest-700 text-center mb-3 leading-tight px-4">Veja como é fácil</h2>
                 <p class="text-lg text-center text-gray-700 mb-8 leading-relaxed">Assista a primeira aula gratuitamente</p>
                 <div class="relative w-full max-w-[340px] mx-auto mb-8">
-                    <div class="relative aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl bg-gray-900"><iframe src="https://www.youtube.com/embed/2-A2chrN41w" title="Prévia da Aula 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen="" class="absolute top-0 left-0 w-full h-full"></iframe></div>
+                    <div class="relative aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl bg-gray-900">
+                        <!-- ADICIONADO LOADING LAZY NO YOUTUBE TAMBÉM -->
+                        <iframe loading="lazy" src="https://www.youtube.com/embed/2-A2chrN41w" title="Prévia da Aula 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen="" class="absolute top-0 left-0 w-full h-full"></iframe>
+                    </div>
                 </div>
                 <div class="mb-20 md:mb-0"><a href="#oferta" class="block w-full md:w-auto md:mx-auto md:max-w-md bg-forest-600 hover:bg-forest-700 active:bg-forest-800 text-white font-bold text-xl py-5 px-6 rounded-2xl uppercase tracking-wide transition-all duration-200 shadow-lg active:scale-[0.98] text-center">Quero acesso completo</a></div>
             </div>
         </section>
-        <section class="w-full py-12 md:py-16 bg-white">
-            <div class="w-[92%] md:w-[90%] max-w-7xl mx-auto">
-                <h2 class="text-[28px] md:text-4xl font-bold text-forest-700 text-center mb-4 leading-tight px-2">Domine os molhos que transformam saladas em
-                    <span class="text-olive-600 block mt-1">refeições incríveis</span></h2>
-                <p class="text-lg text-center text-gray-700 mb-10 leading-relaxed px-4">Aprenda a preparar molhos caseiros, saudáveis e cheios de sabor</p>
-                <div class="space-y-6 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6 md:space-y-0 mb-8">
-                    <div class="bg-beige-50 rounded-3xl overflow-hidden shadow-lg">
-                        <div class="aspect-[4/3] relative bg-gray-100"><img src="https://i.imgur.com/HoATAcp.webp" alt="Molho Caesar" class="w-full h-full object-cover" loading="lazy" /></div>
-                        <div class="p-5">
-                            <h3 class="text-lg font-bold text-forest-700 mb-3 leading-snug">Molho Caesar</h3>
-                            <p class="text-base text-gray-700 leading-relaxed">Cremoso, leve e versátil. Perfeito para saladas verdes, wraps e bowls. Uma alternativa saudável aos molhos industrializados.</p>
-                        </div>
-                    </div>
-                    <div class="bg-beige-50 rounded-3xl overflow-hidden shadow-lg">
-                        <div class="aspect-[4/3] relative bg-gray-100"><img src="https://i.imgur.com/vUdJU4Q.webp" alt="Molho de Ervas Finas" class="w-full h-full object-cover" loading="lazy" /></div>
-                        <div class="p-5">
-                            <h3 class="text-lg font-bold text-forest-700 mb-3 leading-snug">Molho de Ervas Finas</h3>
-                            <p class="text-base text-gray-700 leading-relaxed">Fresco, aromático e sofisticado. Traz o sabor da culinária francesa para o seu dia a dia com uma explosão de ervas.</p>
-                        </div>
-                    </div>
-                    <div class="bg-beige-50 rounded-3xl overflow-hidden shadow-lg">
-                        <div class="aspect-[4/3] relative bg-gray-100"><img src="https://i.imgur.com/gSQbpkL.webp" alt="Molho Italiano" class="w-full h-full object-cover" loading="lazy" /></div>
-                        <div class="p-5">
-                            <h3 class="text-lg font-bold text-forest-700 mb-3 leading-snug">Molho Italiano</h3>
-                            <p class="text-base text-gray-700 leading-relaxed">O clássico que funciona sempre. Versátil, cheio de sabor e perfeito para quem quer praticidade sem abrir mão do gosto.</p>
-                        </div>
-                    </div>
-                    <div class="bg-beige-50 rounded-3xl overflow-hidden shadow-lg">
-                        <div class="aspect-[4/3] relative bg-gray-100"><img src="https://i.imgur.com/XXJwJjG.webp" alt="Molho de Mostarda e Mel" class="w-full h-full object-cover" loading="lazy" /></div>
-                        <div class="p-5">
-                            <h3 class="text-lg font-bold text-forest-700 mb-3 leading-snug">Molho de Mostarda e Mel</h3>
-                            <p class="text-base text-gray-700 leading-relaxed">O equilíbrio perfeito entre doce e picante. Transforma saladas simples em pratos memoráveis e combina com tudo.</p>
-                        </div>
-                    </div>
-                    <div class="bg-beige-50 rounded-3xl overflow-hidden shadow-lg">
-                        <div class="aspect-[4/3] relative bg-gray-100"><img src="https://i.imgur.com/OcZY0Yn.webp" alt="Molho de Vinagre Balsâmico" class="w-full h-full object-cover" loading="lazy" /></div>
-                        <div class="p-5">
-                            <h3 class="text-lg font-bold text-forest-700 mb-3 leading-snug">Molho de Vinagre Balsâmico</h3>
-                            <p class="text-base text-gray-700 leading-relaxed">Sofisticado, agridoce e intenso. Adiciona profundidade e um toque gourmet às suas saladas por centavos.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-20 md:mb-0"><a href="#oferta" class="block w-full md:w-auto md:mx-auto md:max-w-md bg-forest-600 hover:bg-forest-700 active:bg-forest-800 text-white font-bold text-xl py-5 px-6 rounded-2xl uppercase tracking-wide transition-all duration-200 shadow-lg active:scale-[0.98] text-center">Quero minhas receitas</a></div>
-            </div>
-        </section>
-        <section class="w-full py-12 md:py-16 bg-gradient-to-b from-beige-50 to-white">
-            <div class="w-[92%] md:w-[90%] max-w-7xl mx-auto">
-                <div class="flex justify-center mb-4">
-                    <div class="inline-flex items-center gap-2 bg-olive-100 px-4 py-2 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gift w-5 h-5 text-forest-600"><rect x="3" y="8" width="18" height="4" rx="1"></rect><path d="M12 8v13"></path><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"></path><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"></path></svg>
-                        <span
-                            class="text-sm font-bold text-forest-700 uppercase tracking-wide">Bônus Exclusivos</span>
-                    </div>
-                </div>
-                <h2 class="text-[28px] md:text-4xl font-bold text-forest-700 text-center mb-4 leading-tight px-2">Mais de 2.000 receitas adicionais</h2>
-                <p class="text-lg text-center text-gray-700 mb-10 leading-relaxed px-4">Acesso imediato incluso na sua compra</p>
-                <div class="relative mb-8">
-                    <div class="md:hidden overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4">
-                        <div class="flex gap-4 px-2">
-                            <div class="flex-shrink-0 w-[75%] snap-center">
-                                <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                    <div class="aspect-[3/4] relative"><img src="https://i.imgur.com/rZ2JTfD.webp" alt="Como fazer dieta sem fazer dieta" class="w-full h-full object-cover" loading="lazy" /></div>
-                                </div>
-                            </div>
-                            <div class="flex-shrink-0 w-[75%] snap-center">
-                                <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                    <div class="aspect-[3/4] relative"><img src="https://i.imgur.com/d7z2Ntg.webp" alt="700 Receitas de Lanches Deliciosos com Baixa Calorias" class="w-full h-full object-cover" loading="lazy" /></div>
-                                </div>
-                            </div>
-                            <div class="flex-shrink-0 w-[75%] snap-center">
-                                <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                    <div class="aspect-[3/4] relative"><img src="https://i.imgur.com/oABooid.webp" alt="Molhos e Massas sem Glúten e Lactose" class="w-full h-full object-cover" loading="lazy" /></div>
-                                </div>
-                            </div>
-                            <div class="flex-shrink-0 w-[75%] snap-center">
-                                <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                    <div class="aspect-[3/4] relative"><img src="https://i.imgur.com/dKtjFLd.webp" alt="Chás Fitoterápicos" class="w-full h-full object-cover" loading="lazy" /></div>
-                                </div>
-                            </div>
-                            <div class="flex-shrink-0 w-[75%] snap-center">
-                                <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                    <div class="aspect-[3/4] relative"><img src="https://i.imgur.com/RP0mjXT.webp" alt="200 Receitas de Pães sem Glúten" class="w-full h-full object-cover" loading="lazy" /></div>
-                                </div>
-                            </div>
-                            <div class="flex-shrink-0 w-[75%] snap-center">
-                                <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                    <div class="aspect-[3/4] relative"><img src="https://i.imgur.com/Obab7Se.webp" alt="200 Receitas Fit" class="w-full h-full object-cover" loading="lazy" /></div>
-                                </div>
-                            </div>
-                            <div class="flex-shrink-0 w-[75%] snap-center">
-                                <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                    <div class="aspect-[3/4] relative"><img src="https://i.imgur.com/3mHjFWr.webp" alt="Donuts" class="w-full h-full object-cover" loading="lazy" /></div>
-                                </div>
-                            </div>
-                            <div class="flex-shrink-0 w-[75%] snap-center">
-                                <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                    <div class="aspect-[3/4] relative"><img src="https://i.imgur.com/yhHPx8X.webp" alt="40 Receitas de Biscoitos sem Glúten" class="w-full h-full object-cover" loading="lazy" /></div>
-                                </div>
-                            </div>
-                            <div class="flex-shrink-0 w-[75%] snap-center">
-                                <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                    <div class="aspect-[3/4] relative"><img src="https://i.imgur.com/nD7aSt7.webp" alt="18 Receitas de Café da Manhã Fit de Frigideira" class="w-full h-full object-cover" loading="lazy" /></div>
-                                </div>
-                            </div>
-                            <div class="flex-shrink-0 w-[75%] snap-center">
-                                <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                    <div class="aspect-[3/4] relative"><img src="https://i.imgur.com/fabOONJ.webp" alt="17 Receitas Proteicas para Airfryer" class="w-full h-full object-cover" loading="lazy" /></div>
-                                </div>
-                            </div>
-                            <div class="flex-shrink-0 w-[75%] snap-center">
-                                <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                    <div class="aspect-[3/4] relative"><img src="https://i.imgur.com/vyb4X8t.webp" alt="30 Receitas de Marmita Fit" class="w-full h-full object-cover" loading="lazy" /></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hidden md:block relative"><button class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white hover:bg-gray-50 text-forest-700 rounded-full p-3 shadow-xl transition-all -ml-6" aria-label="Anterior"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left w-6 h-6"><path d="m15 18-6-6 6-6"></path></svg></button>
-                        <div
-                            class="overflow-hidden px-12">
-                            <div class="flex gap-6 transition-transform duration-500 ease-out" style="transform:translateX(-0%)">
-                                <div class="flex-shrink-0 w-1/3">
-                                    <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                        <div class="aspect-[3/4] relative"><img src="https://i.imgur.com/rZ2JTfD.webp" alt="Como fazer dieta sem fazer dieta" class="w-full h-full object-cover" loading="lazy" /></div>
-                                    </div>
-                                </div>
-                                <div class="flex-shrink-0 w-1/3">
-                                    <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                        <div class="aspect-[3/4] relative"><img src="https://i.imgur.com/d7z2Ntg.webp" alt="700 Receitas de Lanches Deliciosos com Baixa Calorias" class="w-full h-full object-cover" loading="lazy" /></div>
-                                    </div>
-                                </div>
-                                <div class="flex-shrink-0 w-1/3">
-                                    <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                        <div class="aspect-[3/4] relative"><img src="https://i.imgur.com/oABooid.webp" alt="Molhos e Massas sem Glúten e Lactose" class="w-full h-full object-cover" loading="lazy" /></div>
-                                    </div>
-                                </div>
-                                <div class="flex-shrink-0 w-1/3">
-                                    <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                        <div class="aspect-[3/4] relative"><img src="https://i.imgur.com/dKtjFLd.webp" alt="Chás Fitoterápicos" class="w-full h-full object-cover" loading="lazy" /></div>
-                                    </div>
-                                </div>
-                                <div class="flex-shrink-0 w-1/3">
-                                    <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                        <div class="aspect-[3/4] relative"><img src="https://i.imgur.com/RP0mjXT.webp" alt="200 Receitas de Pães sem Glúten" class="w-full h-full object-cover" loading="lazy" /></div>
-                                    </div>
-                                </div>
-                                <div class="flex-shrink-0 w-1/3">
-                                    <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                        <div class="aspect-[3/4] relative"><img src="https://i.imgur.com/Obab7Se.webp" alt="200 Receitas Fit" class="w-full h-full object-cover" loading="lazy" /></div>
-                                    </div>
-                                </div>
-                                <div class="flex-shrink-0 w-1/3">
-                                    <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                        <div class="aspect-[3/4] relative"><img src="https://i.imgur.com/3mHjFWr.webp" alt="Donuts" class="w-full h-full object-cover" loading="lazy" /></div>
-                                    </div>
-                                </div>
-                                <div class="flex-shrink-0 w-1/3">
-                                    <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                        <div class="aspect-[3/4] relative"><img src="https://i.imgur.com/yhHPx8X.webp" alt="40 Receitas de Biscoitos sem Glúten" class="w-full h-full object-cover" loading="lazy" /></div>
-                                    </div>
-                                </div>
-                                <div class="flex-shrink-0 w-1/3">
-                                    <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                        <div class="aspect-[3/4] relative"><img src="https://i.imgur.com/nD7aSt7.webp" alt="18 Receitas de Café da Manhã Fit de Frigideira" class="w-full h-full object-cover" loading="lazy" /></div>
-                                    </div>
-                                </div>
-                                <div class="flex-shrink-0 w-1/3">
-                                    <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                        <div class="aspect-[3/4] relative"><img src="https://i.imgur.com/fabOONJ.webp" alt="17 Receitas Proteicas para Airfryer" class="w-full h-full object-cover" loading="lazy" /></div>
-                                    </div>
-                                </div>
-                                <div class="flex-shrink-0 w-1/3">
-                                    <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                        <div class="aspect-[3/4] relative"><img src="https://i.imgur.com/vyb4X8t.webp" alt="30 Receitas de Marmita Fit" class="w-full h-full object-cover" loading="lazy" /></div>
-                                    </div>
-                                </div>
-                            </div>
-                    </div><button class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white hover:bg-gray-50 text-forest-700 rounded-full p-3 shadow-xl transition-all -mr-6" aria-label="Próximo"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-6 h-6"><path d="m9 18 6-6-6-6"></path></svg></button></div>
-            </div>
-            <div class="flex justify-center gap-1.5 mb-8">
-                <div class="h-1 md:h-1.5 rounded-full transition-all duration-300 bg-forest-600 w-6 md:w-8"></div>
-                <div class="h-1 md:h-1.5 rounded-full transition-all duration-300 bg-gray-300 w-1 md:w-1.5"></div>
-                <div class="h-1 md:h-1.5 rounded-full transition-all duration-300 bg-gray-300 w-1 md:w-1.5"></div>
-                <div class="h-1 md:h-1.5 rounded-full transition-all duration-300 bg-gray-300 w-1 md:w-1.5"></div>
-                <div class="h-1 md:h-1.5 rounded-full transition-all duration-300 bg-gray-300 w-1 md:w-1.5"></div>
-            </div>
-            <div class="mb-20 md:mb-0"><a href="#oferta" class="block w-full md:w-auto md:mx-auto md:max-w-md bg-forest-600 hover:bg-forest-700 active:bg-forest-800 text-white font-bold text-xl py-5 px-6 rounded-2xl uppercase tracking-wide transition-all duration-200 shadow-lg active:scale-[0.98] text-center">Quero todos os bônus</a></div>
-            </div>
-        </section>
-        <section class="w-full py-12 md:py-16 bg-white">
-            <div class="w-[92%] md:w-[90%] max-w-7xl mx-auto">
-                <div class="flex justify-center mb-4">
-                    <div class="inline-flex items-center gap-2 bg-olive-100 px-4 py-2 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 text-forest-600 fill-forest-600"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                        <span
-                            class="text-sm font-bold text-forest-700 uppercase tracking-wide">Prova Social</span>
-                    </div>
-                </div>
-                <h2 class="text-[28px] md:text-4xl font-bold text-forest-700 text-center mb-3 leading-tight px-4">Quem já está fazendo</h2>
-                <p class="text-lg text-center text-gray-700 mb-10 leading-relaxed">Resultados reais de quem já tem o material</p>
-                <div class="md:hidden overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4 mb-6">
-                    <div class="flex gap-4 px-2">
-                        <div class="flex-shrink-0 w-[75%] snap-center">
-                            <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                <div class="aspect-[9/16] relative"><img src="https://i.imgur.com/flULKNa.webp" alt="Rafaela Castro" class="w-full h-full object-cover" loading="lazy" /></div>
-                            </div>
-                        </div>
-                        <div class="flex-shrink-0 w-[75%] snap-center">
-                            <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                <div class="aspect-[9/16] relative"><img src="https://i.imgur.com/BJgJKts.webp" alt="Marisa bastos" class="w-full h-full object-cover" loading="lazy" /></div>
-                            </div>
-                        </div>
-                        <div class="flex-shrink-0 w-[75%] snap-center">
-                            <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                <div class="aspect-[9/16] relative"><img src="https://i.imgur.com/tgstqhT.webp" alt="Carol Andrade" class="w-full h-full object-cover" loading="lazy" /></div>
-                            </div>
-                        </div>
-                        <div class="flex-shrink-0 w-[75%] snap-center">
-                            <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                <div class="aspect-[9/16] relative"><img src="https://i.imgur.com/vIfQYFh.webp" alt="Ana Paula" class="w-full h-full object-cover" loading="lazy" /></div>
-                            </div>
-                        </div>
-                        <div class="flex-shrink-0 w-[75%] snap-center">
-                            <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                <div class="aspect-[9/16] relative"><img src="https://i.imgur.com/gNM0Fw6.webp" alt="Juliana Santos" class="w-full h-full object-cover" loading="lazy" /></div>
-                            </div>
-                        </div>
-                        <div class="flex-shrink-0 w-[75%] snap-center">
-                            <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                <div class="aspect-[9/16] relative"><img src="https://i.imgur.com/7XVV12b.webp" alt="Patricia Lima" class="w-full h-full object-cover" loading="lazy" /></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hidden md:block relative mb-8"><button class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white hover:bg-gray-50 text-forest-700 rounded-full p-3 shadow-xl transition-all -ml-6" aria-label="Anterior"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left w-6 h-6"><path d="m15 18-6-6 6-6"></path></svg></button>
-                    <div
-                        class="overflow-hidden px-12">
-                        <div class="flex gap-6 transition-transform duration-500 ease-out" style="transform:translateX(-0%)">
-                            <div class="flex-shrink-0 w-1/3">
-                                <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                    <div class="aspect-[9/16] relative"><img src="https://i.imgur.com/flULKNa.webp" alt="Rafaela Castro" class="w-full h-full object-cover" loading="lazy" /></div>
-                                </div>
-                            </div>
-                            <div class="flex-shrink-0 w-1/3">
-                                <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                    <div class="aspect-[9/16] relative"><img src="https://i.imgur.com/BJgJKts.webp" alt="Marisa bastos" class="w-full h-full object-cover" loading="lazy" /></div>
-                                </div>
-                            </div>
-                            <div class="flex-shrink-0 w-1/3">
-                                <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                    <div class="aspect-[9/16] relative"><img src="https://i.imgur.com/tgstqhT.webp" alt="Carol Andrade" class="w-full h-full object-cover" loading="lazy" /></div>
-                                </div>
-                            </div>
-                            <div class="flex-shrink-0 w-1/3">
-                                <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                    <div class="aspect-[9/16] relative"><img src="https://i.imgur.com/vIfQYFh.webp" alt="Ana Paula" class="w-full h-full object-cover" loading="lazy" /></div>
-                                </div>
-                            </div>
-                            <div class="flex-shrink-0 w-1/3">
-                                <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                    <div class="aspect-[9/16] relative"><img src="https://i.imgur.com/gNM0Fw6.webp" alt="Juliana Santos" class="w-full h-full object-cover" loading="lazy" /></div>
-                                </div>
-                            </div>
-                            <div class="flex-shrink-0 w-1/3">
-                                <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                                    <div class="aspect-[9/16] relative"><img src="https://i.imgur.com/7XVV12b.webp" alt="Patricia Lima" class="w-full h-full object-cover" loading="lazy" /></div>
-                                </div>
-                            </div>
-                        </div>
-                </div><button class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white hover:bg-gray-50 text-forest-700 rounded-full p-3 shadow-xl transition-all -mr-6" aria-label="Próximo"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-6 h-6"><path d="m9 18 6-6-6-6"></path></svg></button></div>
-            <div
-                class="flex justify-center gap-1.5 mb-8"><button class="h-1 md:h-1.5 rounded-full transition-all duration-300 bg-forest-600 w-6 md:w-8" aria-label="Ir para depoimento 1"></button><button class="h-1 md:h-1.5 rounded-full transition-all duration-300 bg-gray-300 w-1 md:w-1.5" aria-label="Ir para depoimento 2"></button>
-                <button
-                    class="h-1 md:h-1.5 rounded-full transition-all duration-300 bg-gray-300 w-1 md:w-1.5" aria-label="Ir para depoimento 3"></button><button class="h-1 md:h-1.5 rounded-full transition-all duration-300 bg-gray-300 w-1 md:w-1.5" aria-label="Ir para depoimento 4"></button><button class="h-1 md:h-1.5 rounded-full transition-all duration-300 bg-gray-300 w-1 md:w-1.5"
-                        aria-label="Ir para depoimento 5"></button><button class="h-1 md:h-1.5 rounded-full transition-all duration-300 bg-gray-300 w-1 md:w-1.5" aria-label="Ir para depoimento 6"></button></div>
-                    <div class="mb-20 md:mb-0"><a href="#oferta" class="block w-full md:w-auto md:mx-auto md:max-w-md bg-forest-600 hover:bg-forest-700 active:bg-forest-800 text-white font-bold text-xl py-5 px-6 rounded-2xl uppercase tracking-wide transition-all duration-200 shadow-lg active:scale-[0.98] text-center">Quero minhas receitas</a></div>
-                    </div>
-        </section>
+
+        <!-- SEÇÃO DE OFERTA -->
         <section id="oferta" class="w-full py-12 md:py-16 bg-gradient-to-b from-forest-700 to-forest-800">
             <div class="w-[92%] md:w-[90%] max-w-2xl mx-auto">
                 <div class="bg-white rounded-3xl overflow-hidden shadow-2xl">
                     <div class="bg-gradient-to-r from-olive-200 to-forest-200 p-6 text-center">
                         <div class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-orange-500"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-                            <span
-                                class="text-sm font-bold text-gray-900 uppercase">Oferta Especial</span>
+                            <span class="text-sm font-bold text-gray-900 uppercase">Oferta Especial</span>
                         </div>
                         <h2 class="text-[26px] md:text-3xl font-bold text-forest-800 mb-2 leading-tight">Comece sua transformação hoje</h2>
                         <p class="text-base text-gray-700 leading-relaxed">Acesso imediato a todo o conteúdo</p>
                     </div>
                     <div class="p-6 md:p-8">
-                        <div class="mb-8 px-4 md:px-8">
-                            <div class="relative w-full rounded-2xl overflow-hidden shadow-lg"><img src="https://i.imgur.com/Wa05GqT.webp" alt="Saladas de Pote - Mockup Tablet e Celular" class="w-full h-auto" loading="lazy" /></div>
-                        </div>
-                        <h3 class="text-xl font-bold text-forest-700 mb-4 text-center">Veja tudo que você vai receber</h3>
-                        <ul class="space-y-3 mb-8 bg-beige-50 p-5 rounded-2xl">
-                            <li class="flex items-start gap-3">
-                                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-forest-600 flex items-center justify-center mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4 text-white stroke-[3]"><path d="M20 6 9 17l-5-5"></path></svg></div>
-                                <span
-                                    class="text-gray-800 text-base font-medium leading-relaxed">60 Receitas de Saladas de Pote</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-forest-600 flex items-center justify-center mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4 text-white stroke-[3]"><path d="M20 6 9 17l-5-5"></path></svg></div>
-                                <span
-                                    class="text-gray-800 text-base font-medium leading-relaxed">35 Receitas De Doces Fit</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-forest-600 flex items-center justify-center mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4 text-white stroke-[3]"><path d="M20 6 9 17l-5-5"></path></svg></div>
-                                <span
-                                    class="text-gray-800 text-base font-medium leading-relaxed">29 Receitas De Sobremesas Sem Açúcar</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-forest-600 flex items-center justify-center mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4 text-white stroke-[3]"><path d="M20 6 9 17l-5-5"></path></svg></div>
-                                <span
-                                    class="text-gray-800 text-base font-medium leading-relaxed">Passo a passo Do Donuts Sem Açúcar</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-forest-600 flex items-center justify-center mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4 text-white stroke-[3]"><path d="M20 6 9 17l-5-5"></path></svg></div>
-                                <span
-                                    class="text-gray-800 text-base font-medium leading-relaxed">41 Receitas De Biscoitos Sem Glúten</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-forest-600 flex items-center justify-center mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4 text-white stroke-[3]"><path d="M20 6 9 17l-5-5"></path></svg></div>
-                                <span
-                                    class="text-gray-800 text-base font-medium leading-relaxed">200 Receitas FIT Para o Almoço e Jantar</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-forest-600 flex items-center justify-center mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4 text-white stroke-[3]"><path d="M20 6 9 17l-5-5"></path></svg></div>
-                                <span
-                                    class="text-gray-800 text-base font-medium leading-relaxed">30 Receitas De Marmitas Fit</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-forest-600 flex items-center justify-center mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4 text-white stroke-[3]"><path d="M20 6 9 17l-5-5"></path></svg></div>
-                                <span
-                                    class="text-gray-800 text-base font-medium leading-relaxed">10 Receitas De Pizzas Fit</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-forest-600 flex items-center justify-center mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4 text-white stroke-[3]"><path d="M20 6 9 17l-5-5"></path></svg></div>
-                                <span
-                                    class="text-gray-800 text-base font-medium leading-relaxed">17 Receitas Proteicas De AirFryer</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-forest-600 flex items-center justify-center mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4 text-white stroke-[3]"><path d="M20 6 9 17l-5-5"></path></svg></div>
-                                <span
-                                    class="text-gray-800 text-base font-medium leading-relaxed">18 Receitas De Café Da Manhã FIT De Frigideira</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-forest-600 flex items-center justify-center mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4 text-white stroke-[3]"><path d="M20 6 9 17l-5-5"></path></svg></div>
-                                <span
-                                    class="text-gray-800 text-base font-medium leading-relaxed">200 Receitas De Pães Sem Glúten</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-forest-600 flex items-center justify-center mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4 text-white stroke-[3]"><path d="M20 6 9 17l-5-5"></path></svg></div>
-                                <span
-                                    class="text-gray-800 text-base font-medium leading-relaxed">15 Receitas De Chás Fitoterápicos</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-forest-600 flex items-center justify-center mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4 text-white stroke-[3]"><path d="M20 6 9 17l-5-5"></path></svg></div>
-                                <span
-                                    class="text-gray-800 text-base font-medium leading-relaxed">700 Receitas De Lanches Com Baixa Calorias</span>
-                            </li>
-                        </ul>
                         <div class="bg-gradient-to-br from-olive-50 to-forest-50 rounded-2xl p-6 mb-6 border-2 border-forest-200">
                             <p class="text-center text-gray-600 text-sm mb-2 uppercase tracking-wide">De <span class="line-through">R$ 750,00</span> por apenas</p>
                             <div class="text-center mb-4">
                                 <div class="text-5xl md:text-6xl font-black text-forest-600 mb-1">R$ 29,90</div>
                                 <p class="text-lg text-gray-700 font-semibold">ou 6x de R$ 5,66 sem juros</p>
-                            </div>
-                            <div class="flex items-center justify-center gap-6 pt-4 border-t border-forest-200">
-                                <div class="flex items-center gap-2 text-gray-700"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-credit-card w-5 h-5"><rect width="20" height="14" x="2" y="5" rx="2"></rect><line x1="2" x2="22" y1="10" y2="10"></line></svg>
-                                    <span
-                                        class="font-medium">Cartão</span>
-                                </div>
-                                <div class="text-gray-400">ou</div>
-                                <div class="flex items-center gap-2 text-gray-700"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-smartphone w-5 h-5"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect><path d="M12 18h.01"></path></svg>
-                                    <span
-                                        class="font-medium">PIX</span>
-                                </div>
                             </div>
                         </div>
                         <div class="mb-6">
@@ -736,7 +305,7 @@
                     <span>|</span>
                     <a href="#" class="hover:text-white transition-colors">Políticas de Privacidade</a>
                 </div>
-                <p class="text-forest-400 text-xs">© 2026 Nutri Marta Carvalho. Todos os direitos reservados.</p>
+                <p class="text-forest-400 text-xs">© 2024 Nutri Marta Carvalho. Todos os direitos reservados.</p>
             </div>
         </footer>
     </main>
